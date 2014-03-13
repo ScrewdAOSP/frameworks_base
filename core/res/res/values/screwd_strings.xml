@@ -82,4 +82,7 @@
     <string name="battery_style_circle">Circle</string>
     <string name="battery_style_screwd">Screw\'d</string>
 
+    <!-- label for item that takes On-The-Go in the phone options dialog -->
+    <string name="global_action_onthego">On-The-Go Mode</string>
+    
 </resources>
