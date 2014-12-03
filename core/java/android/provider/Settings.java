@@ -3972,7 +3972,7 @@ public final class Settings {
         @ChaosLab(name="GestureAnywhere", classification=Classification.NEW_FIELD)
         public static final String GESTURE_ANYWHERE_ENABLED = "gesture_anywhere_enabled";
 
-        /** 
+        /**
          * Whether to allow one finger quick settings expansion on the right side of the statusbar.
          * @hide
          */
@@ -4112,6 +4112,12 @@ public final class Settings {
          * @hide
          */
         public static final String DOUBLE_TAP_SLEEP_ANYWHERE = "double_tap_sleep_anywhere";
+
+        /**
+         * Quick Settings Smart Pulldown
+         * @hide
+         */
+        public static final String QS_SMART_PULLDOWN = "qs_smart_pulldown";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
