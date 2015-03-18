@@ -158,4 +158,8 @@
   <java-symbol type="drawable" name="ic_shortcut_action_screenshot" />
   <java-symbol type="drawable" name="ic_shortcut_action_search" />
 
+  <!-- Battery lights -->
+  <java-symbol type="bool" name="config_multiColorBatteryLed" />
+  <java-symbol type="bool" name="config_intrusiveBatteryLed" />
+
 </resources>
