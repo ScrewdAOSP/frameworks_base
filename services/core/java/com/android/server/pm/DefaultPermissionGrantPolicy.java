@@ -607,6 +607,17 @@ final class DefaultPermissionGrantPolicy {
                 grantRuntimePermissionsLPw(nfcTagPkg, PHONE_PERMISSIONS, false, userId);
             }
 
+            // Chromium
+            PackageParser.Package chromiumPackage = getDefaultProviderAuthorityPackageLPr(
+                    "org.chromium.chrome", userId);
+            if (chromiumPackage != null) {
+                grantRuntimePermissionsLPw(chromiumPackage, CONTACTS_PERMISSIONS, true, userId);
+                grantRuntimePermissionsLPw(chromiumPackage, STORAGE_PERMISSIONS, true, userId);
+                grantRuntimePermissionsLPw(chromiumPackage, CAMERA_PERMISSIONS, true, userId);
+                grantRuntimePermissionsLPw(chromiumPackage, LOCATION_PERMISSIONS, true, userId);
+                grantRuntimePermissionsLPw(chromiumPackage, MICROPHONE_PERMISSIONS, true, userId);
+            }
+
             // Google Account
             PackageParser.Package googleaccountPackage = getDefaultProviderAuthorityPackageLPr(
                     "com.google.android.gsf.login", userId);
