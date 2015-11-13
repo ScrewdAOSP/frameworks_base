@@ -34,7 +34,7 @@ public final class PhoneStatusBarTransitions extends BarTransitions {
     private final PhoneStatusBarView mView;
     private final float mIconAlphaWhenOpaque;
 
-    private View mLeftSide, mStatusIcons, mSignalCluster, mBattery, mClock, mNetworkTraffic, mCenterClock, mWeatherTextView, mScrewdLogo, mScrewdLogoAnim;
+    private View mLeftSide, mStatusIcons, mSignalCluster, mBattery, mClock, mNetworkTraffic, mCenterClock, mWeatherTextView, mScrewdLogo, mScrewdLogoAnim, mMinitBattery;
     private Animator mCurrentAnimation;
 
     public PhoneStatusBarTransitions(PhoneStatusBarView view) {
@@ -58,6 +58,7 @@ public final class PhoneStatusBarTransitions extends BarTransitions {
         mWeatherTextView = mView.findViewById(R.id.weather_temp);
 	mScrewdLogo = mView.findViewById(R.id.screwd_logo_static);
 	mScrewdLogoAnim = mView.findViewById(R.id.screwd_logo_anim);
+        mMinitBattery = mView.findViewById(R.id.minitBattery);
         applyModeBackground(-1, getMode(), false /*animate*/);
         applyMode(getMode(), false /*animate*/);
     }
@@ -107,7 +108,8 @@ public final class PhoneStatusBarTransitions extends BarTransitions {
                     animateTransitionTo(mClock, newAlphaBC),
                     animateTransitionTo(mCenterClock, newAlphaBC),
 		    animateTransitionTo(mScrewdLogo, newAlphaBC),
-		    animateTransitionTo(mScrewdLogoAnim, newAlphaBC)
+		    animateTransitionTo(mScrewdLogoAnim, newAlphaBC),
+                    animateTransitionTo(mMinitBattery, newAlphaBC)
                     );
             if (isLightsOut(mode)) {
                 anims.setDuration(LIGHTS_OUT_DURATION);
@@ -125,6 +127,7 @@ public final class PhoneStatusBarTransitions extends BarTransitions {
             mCenterClock.setAlpha(newAlphaBC);
 	    mScrewdLogo.setAlpha(newAlphaBC);
 	    mScrewdLogoAnim.setAlpha(newAlphaBC);
+            mMinitBattery.setAlpha(newAlphaBC);
         }
     }
 }
