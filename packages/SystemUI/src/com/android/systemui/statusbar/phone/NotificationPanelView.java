@@ -1068,6 +1068,7 @@ public class NotificationPanelView extends PanelView implements
             mStatusBar.setQsExpanded(expanded);
             mQsPanel.setExpanded(expanded);
             mNotificationContainerParent.setQsExpanded(expanded);
+            mHeader.setQsExpanded(expanded);
         }
     }
 
