@@ -406,7 +406,7 @@ public class NavigationBarView extends BaseNavigationBar {
         mDeadZone.setStartFromRight(mLeftInLandscape);
 
         // force the low profile & disabled states into compliance
-        mBarTransitions.init();
+        mBarTransitions.init(mVertical);
         setDisabledFlags(mDisabledFlags, true /* force */);
         setMenuVisibility(mShowMenu, true /* force */);
 
