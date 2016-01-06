@@ -326,6 +326,9 @@
     <string name="quick_settings_fling">Fling gesture</string>
     <string name="quick_settings_fling_off">Fling gesture off</string>
     
+    <!-- Screw'd Settings Tile -->
+    <string name="quick_settings_screwdsettings">Screw\'d Settings</string>
+    
      <!-- Statusbar Vibrate silent switch -->
     <string name="status_bar_vibsil">Vibrate &amp; silent</string>
 
