@@ -47,6 +47,7 @@ import com.android.systemui.qs.tiles.IntentTile;
 import com.android.systemui.qs.tiles.LocationTile;
 import com.android.systemui.qs.tiles.LockscreenToggleTile;
 import com.android.systemui.qs.tiles.MusicTile;
+import com.android.systemui.qs.tiles.NavigationBarTile;
 import com.android.systemui.qs.tiles.NfcTile;
 import com.android.systemui.qs.tiles.PieTile;
 import com.android.systemui.qs.tiles.RebootTile;
@@ -302,6 +303,7 @@ public class QSTileHost implements QSTile.Host, Tunable {
         else if (tileSpec.equals("sound")) return new SoundTile(this);
 		else if (tileSpec.equals("pie")) return new PieTile(this);
 		else if (tileSpec.equals("lockscreen")) return  new LockscreenToggleTile(this);
+        else if (tileSpec.equals("navigation_bar")) return new NavigationBarTile(this);
         else if (tileSpec.startsWith(IntentTile.PREFIX)) return IntentTile.create(this,tileSpec);
         else throw new IllegalArgumentException("Bad tile spec: " + tileSpec);
     }
