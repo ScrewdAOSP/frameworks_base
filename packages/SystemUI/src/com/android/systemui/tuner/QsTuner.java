@@ -223,7 +223,7 @@ public class QsTuner extends Fragment implements Callback {
         else if (spec.equals("sound")) return R.string.quick_settings_sound_label;
 		else if (spec.equals("pie")) return R.string.quick_settings_pie_label;
         else if (spec.equals("lockscreen")) return R.string.quick_settings_lockscreen_label;
-        else if (spec.equals("navigation_bar")) return R.string.quick_settings_smartbar;
+        else if (spec.equals("navigation_bar")) return R.string.quick_settings_navigation_bar;
         return 0;
     }
 
