@@ -108,7 +108,7 @@
 
     <dimen name="status_bar_expanded_header_elevation">4dp</dimen>
 
-    <dimen name="volume_panel_z">4dp</dimen>
+    <dimen name="volume_panel_z">8dp</dimen>
 
     <!-- Side padding for the status bar header -->
     <dimen name="notification_header_side_padding">@dimen/notification_side_padding</dimen>
@@ -117,7 +117,7 @@
     <dimen name="qs_panel_side_padding">@dimen/notification_side_padding</dimen>
 
     <!-- The task item height in task list. -->
-    <dimen name="task_manager_item_height">40dip</dimen>
+    <dimen name="task_manager_item_height">48dip</dimen>
     
     <dimen name="qs_detail_item_height_twoline">72dp</dimen>
 </resources>

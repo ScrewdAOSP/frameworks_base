@@ -24,11 +24,11 @@
         <!-- NoTitle -->
         <item name="android:windowNoTitle">true</item>
         <!-- Misc -->
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">#1A000000</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:windowAnimationStyle">@style/Animation.RecentsActivity</item>
-        <item name="android:ambientShadowAlpha">0.35</item>
+        <item name="android:ambientShadowAlpha">0.75</item>
     </style>
 
 
