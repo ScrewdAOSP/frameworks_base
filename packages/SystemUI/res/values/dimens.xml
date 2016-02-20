@@ -221,10 +221,10 @@
     <dimen name="recents_task_view_rounded_corners_radius">2dp</dimen>
 
     <!-- The min translation in the Z index for the last task. -->
-    <dimen name="recents_task_view_z_min">20dp</dimen>
+    <dimen name="recents_task_view_z_min">30dp</dimen>
 
     <!-- The max translation in the Z index for the last task. -->
-    <dimen name="recents_task_view_z_max">80dp</dimen>
+    <dimen name="recents_task_view_z_max">120dp</dimen>
 
     <!-- The amount to translate when animating the removal of a task. -->
     <dimen name="recents_task_view_remove_anim_translation_x">100dp</dimen>
@@ -526,9 +526,9 @@
     
     <!-- Inset shadow for FakeShadowDrawable. It is used to avoid gaps between the card
          and the shadow. -->
-    <dimen name="fake_shadow_inset">1dp</dimen>
+    <dimen name="fake_shadow_inset">4dp</dimen>
 
-    <dimen name="fake_shadow_size">8dp</dimen>
+    <dimen name="fake_shadow_size">14dp</dimen>
 
     <!-- Padding between signal cluster and battery icon -->
     <dimen name="signal_cluster_battery_padding">7dp</dimen>
