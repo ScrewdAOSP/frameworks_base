@@ -25,10 +25,7 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 
 import com.android.internal.statusbar.IStatusBarService;
-import com.android.systemui.statusbar.policy.KeyButtonView;
 import com.android.systemui.R;
-
-import java.util.List;
 
 public final class NavigationBarTransitions extends BarTransitions {
 
@@ -36,8 +33,6 @@ public final class NavigationBarTransitions extends BarTransitions {
     private final IStatusBarService mBarService;
 
     private boolean mLightsOut;
-    private boolean mVertical;
-    private int mRequestedMode;
 
     public NavigationBarTransitions(NavigationBarView view) {
         super(view, R.drawable.nav_background, R.color.navigation_bar_background_opaque,
@@ -49,29 +44,9 @@ public final class NavigationBarTransitions extends BarTransitions {
                 ServiceManager.getService(Context.STATUS_BAR_SERVICE));
     }
 
-    public void init(boolean isVertical) {
-        setVertical(isVertical);
+    public void init() {
         applyModeBackground(-1, getMode(), false /*animate*/);
         applyMode(getMode(), false /*animate*/, true /*force*/);
-    }
-
-    public void setVertical(boolean isVertical) {
-        mVertical = isVertical;
-        transitionTo(mRequestedMode, false /*animate*/);
-    }
-
-    @Override
-    public void transitionTo(int mode, boolean animate) {
-        mRequestedMode = mode;
-        if (mVertical) {
-            // translucent mode not allowed when vertical
-            if (mode == MODE_TRANSLUCENT || mode == MODE_TRANSPARENT) {
-                mode = MODE_OPAQUE;
-            } else if (mode == MODE_LIGHTS_OUT_TRANSPARENT) {
-                mode = MODE_LIGHTS_OUT;
-            }
-        }
-        super.transitionTo(mode, animate);
     }
 
     @Override

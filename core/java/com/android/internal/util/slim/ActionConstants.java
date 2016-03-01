@@ -19,7 +19,7 @@ package com.android.internal.util.slim;
 public class ActionConstants {
 
     // key must fit with the values arrays from Settings to use
-    // Action.java actions
+    // SlimActions.java actions
     public static final String ACTION_HOME                 = "**home**";
     public static final String ACTION_BACK                 = "**back**";
     public static final String ACTION_SEARCH               = "**search**";
@@ -28,7 +28,6 @@ public class ActionConstants {
     public static final String ACTION_MENU_BIG             = "**menu_big**";
     public static final String ACTION_POWER                = "**power**";
     public static final String ACTION_NOTIFICATIONS        = "**notifications**";
-    public static final String ACTION_SETTINGS_PANEL       = "**settings_panel**";
     public static final String ACTION_RECENTS              = "**recents**";
     public static final String ACTION_SCREENSHOT           = "**screenshot**";
     public static final String ACTION_IME                  = "**ime**";
@@ -54,7 +53,6 @@ public class ActionConstants {
     public static final String ACTION_MEDIA_NEXT           = "**media_next**";
     public static final String ACTION_MEDIA_PLAY_PAUSE     = "**media_play_pause**";
     public static final String ACTION_WAKE_DEVICE          = "**wake_device**";
-    public static final String ACTION_NOW_ON_TAP           = "**now_on_tap**";
 
     // no action
     public static final String ACTION_NULL            = "**null**";
@@ -69,14 +67,14 @@ public class ActionConstants {
     public static final String ACTION_DELIMITER = "|";
 
     public static final String NAVIGATION_CONFIG_DEFAULT =
-          ACTION_BACK       + ACTION_DELIMITER
-        + ACTION_NULL       + ACTION_DELIMITER
-        + ICON_EMPTY        + ACTION_DELIMITER
-        + ACTION_HOME       + ACTION_DELIMITER
-        + ACTION_NOW_ON_TAP + ACTION_DELIMITER
-        + ICON_EMPTY        + ACTION_DELIMITER
-        + ACTION_RECENTS    + ACTION_DELIMITER
-        + ACTION_NULL       + ACTION_DELIMITER
+          ACTION_BACK    + ACTION_DELIMITER
+        + ACTION_NULL    + ACTION_DELIMITER
+        + ICON_EMPTY     + ACTION_DELIMITER
+        + ACTION_HOME    + ACTION_DELIMITER
+        + ACTION_NULL    + ACTION_DELIMITER
+        + ICON_EMPTY     + ACTION_DELIMITER
+        + ACTION_RECENTS + ACTION_DELIMITER
+        + ACTION_NULL    + ACTION_DELIMITER
         + ICON_EMPTY;
 
     public static final String NAV_RING_CONFIG_DEFAULT =
