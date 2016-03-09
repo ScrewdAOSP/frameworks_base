@@ -221,7 +221,6 @@ public class QsTuner extends Fragment implements Callback {
         else if (spec.equals("volume")) return R.string.quick_settings_volume_panel_label;
         else if (spec.equals("heads_up")) return R.string.quick_settings_heads_up_label;
         else if (spec.equals("sound")) return R.string.quick_settings_sound_label;
-		else if (spec.equals("navbar")) return R.string.quick_settings_navbar_label;
 		else if (spec.equals("pie")) return R.string.quick_settings_pie_label;
         else if (spec.equals("lockscreen")) return R.string.quick_settings_lockscreen_label;
         return 0;
@@ -482,7 +481,6 @@ public class QsTuner extends Fragment implements Callback {
             else if (mSpec.equals("volume")) return R.drawable.ic_qs_volume_panel;
             else if (mSpec.equals("heads_up")) return R.drawable.ic_qs_heads_up_on;
             else if (mSpec.equals("sound")) return R.drawable.ic_qs_ringer_audible;
-			else if (mSpec.equals("navbar")) return R.drawable.ic_qs_navbar_on;
 			else if (mSpec.equals("pie")) return R.drawable.ic_qs_pie_on;
             else if (mSpec.equals("lockscreen")) return R.drawable.ic_qs_lock_screen_on;
             return R.drawable.android;
