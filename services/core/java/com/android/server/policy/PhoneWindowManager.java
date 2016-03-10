@@ -2080,6 +2080,8 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 updateEdgeGestureListenerState();
             }
 
+			 mTorchEnabled = (Settings.System.getIntForUser(resolver,
+                    Settings.System.KEYGUARD_TOGGLE_TORCH, 0, UserHandle.USER_CURRENT) == 1);		
 
             if (mSystemReady) {
                 int pointerLocation = Settings.System.getIntForUser(resolver,
