@@ -2578,15 +2578,18 @@ public class NotificationPanelView extends PanelView implements
             ContentResolver resolver = mContext.getContentResolver();
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.QS_QUICK_PULLDOWN), false, this, UserHandle.USER_ALL);
-			resolver.registerContentObserver(Settings.Secure.getUriFor(
+	    resolver.registerContentObserver(Settings.Secure.getUriFor(
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD),
                     false, this, UserHandle.USER_ALL);	
-			resolver.registerContentObserver(Settings.System.getUriFor(
+	    resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.QS_TRANSPARENT_SHADE),
                     false, this, UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.QS_SMART_PULLDOWN),
                     false, this, UserHandle.USER_ALL);
+			resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.ENABLE_TASK_MANAGER), 
+					false, this, UserHandle.USER_ALL);
             update();
         }
 
@@ -2601,14 +2604,17 @@ public class NotificationPanelView extends PanelView implements
             ContentResolver resolver = mContext.getContentResolver();
             mOneFingerQuickSettingsIntercept = Settings.System.getIntForUser(resolver,
                     Settings.System.QS_QUICK_PULLDOWN, 0, UserHandle.USER_CURRENT);
-			mStatusBarLockedOnSecureKeyguard = Settings.Secure.getIntForUser(
+	    mStatusBarLockedOnSecureKeyguard = Settings.Secure.getIntForUser(
                     resolver, Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 0,
                     UserHandle.USER_CURRENT) == 1;
-			mQSShadeAlpha = Settings.System.getInt(
+	    mQSShadeAlpha = Settings.System.getInt(
                     resolver, Settings.System.QS_TRANSPARENT_SHADE, 255);
-			mQsSmartPullDown = Settings.System.getIntForUser(
+	    mQsSmartPullDown = Settings.System.getIntForUser(
                     resolver, Settings.System.QS_SMART_PULLDOWN, 0,
-                    UserHandle.USER_CURRENT);			
+                    UserHandle.USER_CURRENT);	
+	    mShowTaskManager = Settings.System.getIntForUser(resolver,
+                    Settings.System.ENABLE_TASK_MANAGER, 0, 
+                    UserHandle.USER_CURRENT) == 1;		
             setQSBackgroundAlpha();			
         }
     }
