@@ -1420,6 +1420,10 @@ public abstract class BaseStatusBar extends SystemUI implements
         if (!isOmniSwitchEnabled()) {
             if (mRecents != null) {
                 mRecents.showNextAffiliatedTask();
+        	} else if (mRecents != null) {
+             mRecents.showNextAffiliatedTask();
+        	} else if (mSlimRecents != null) {
+            mSlimRecents.cancelPreloadingRecentTasksList();
             }
         }
     }
@@ -1428,10 +1432,6 @@ public abstract class BaseStatusBar extends SystemUI implements
         if (!isOmniSwitchEnabled()) {
             if (mRecents != null) {
                 mRecents.showPrevAffiliatedTask();
-        	} else if (mRecents != null) {
-             mRecents.showNextAffiliatedTask();
-        	} else if (mSlimRecents != null) {
-            mSlimRecents.cancelPreloadingRecentTasksList();
             }
         }
     }
