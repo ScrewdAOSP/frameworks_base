@@ -572,25 +572,11 @@ final class DefaultPermissionGrantPolicy {
                 grantRuntimePermissionsLPw(musicPackage, STORAGE_PERMISSIONS, userId);
             }
 
-            // Chromium Regular
-            PackageParser.Package chromiumPackageReg = getDefaultProviderAuthorityPackageLPr(
+            // Chromium
+            PackageParser.Package chromiumPackage = getDefaultProviderAuthorityPackageLPr(
                     "org.chromium.chrome", userId);
-            if (chromiumPackageReg != null) {
-                grantRuntimePermissionsLPw(chromiumPackageReg, CONTACTS_PERMISSIONS, userId);
-            }
-
-            // Chromium Other
-            PackageParser.Package chromiumPackageOther = getDefaultProviderAuthorityPackageLPr(
-                    "org.swe.atego.browser", userId);
-            if (chromiumPackageOther != null) {
-                grantRuntimePermissionsLPw(chromiumPackageOther, CONTACTS_PERMISSIONS, userId);
-            }
-
-            // SaberChrome
-            PackageParser.Package chromiumPackageSaber = getDefaultProviderAuthorityPackageLPr(
-                    "org.frap129.saberchrome.browser", userId);
-            if (chromiumPackageSaber != null) {
-                grantRuntimePermissionsLPw(chromiumPackageSaber, CONTACTS_PERMISSIONS, userId);
+            if (chromiumPackage != null) {
+                grantRuntimePermissionsLPw(chromiumPackage, CONTACTS_PERMISSIONS, userId);
             }
 
             // Google Account
