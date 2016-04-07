@@ -4724,12 +4724,6 @@ public final class Settings {
          */
         public static final String PROXIMITY_AUTO_SPEAKER_INCALL_ONLY =
                 "proximity_auto_speaker_incall_only";
-
-        /**
-         * Display second in the Clock
-         * @hide
-         */
-        public static final String CLOCK_USE_SECOND = "clock_use_second";
 		
 		/**
          * Change the number of columns displayed in the Settings dashboard
