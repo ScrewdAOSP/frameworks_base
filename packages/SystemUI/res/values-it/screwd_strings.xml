@@ -79,9 +79,6 @@
   <string name="quick_settings_location_gps_only_label">Solo dispositivo</string>
   <!-- QuickSettings: Location (On, high-accuracy) [CHAR LIMIT=NONE] -->
   <string name="quick_settings_location_high_accuracy_label">Alta precisione</string>
-  <string name="quick_settings_navbar_label">NavBar</string>
-  <string name="quick_settings_navbar_on">NavBar On</string>
-  <string name="quick_settings_navbar_off">NavBar Off</string>
   <string name="gestures_message">Disegna la tua gesture qui</string>
   <!-- Text to use when the number in a notification info is too large
          (greater than status_bar_notification_info_maxnum, defined in
@@ -242,8 +239,7 @@
   <!-- SystemUI Tuner Parts -->
   <string name="systemui_tuner_statusbar_title">Elementi Statusbar</string>
   <string name="systemui_tuner_qs_title">Impostazioni Rapide</string>
-  <!-- Screenshot -->
-  <string name="shortcut_screenshot">Screenshot</string>
+  <string name="status_bar_silent">Modalità silenziosa</string>
   <!-- Task Manager -->
   <string name="task_manager_title">Task Manager</string>
   <string name="message_switch_fail">Impossibile passare a questa funzione, perché essa non ha alcuna interfaccia.</string>
@@ -254,4 +250,27 @@
   <!-- Notification which notifies user flashlight is enabled -->
   <string name="quick_settings_tile_flashlight_not_title">Torcia elettrica attiva</string>
   <string name="quick_settings_tile_flashlight_not_summary">Tocca per spegnere</string>
+  <!-- Navigation bar Tile -->
+  <string name="quick_settings_navigation_bar">Barra di navigazione</string>
+  <string name="quick_settings_smartbar">SmartBar</string>
+  <string name="quick_settings_smartbar_off">SmartBar disattiva</string>
+  <string name="quick_settings_fling">Fling gesture disattiva</string>
+  <string name="quick_settings_fling_off">Fling gesture disattiva</string>
+  <!-- Screw'd Settings Tile -->
+  <string name="quick_settings_screwdsettings">Impostazioni Screw\'d</string>
+  <!-- Statusbar Vibrate silent switch -->
+  <string name="status_bar_vibsil">Vibrazione &amp; silenzioso</string>
+  <!-- headset icon switch -->
+  <string name="status_bar_headset">Cuffie</string>
+  <!-- vpn icon switch -->
+  <string name="status_bar_vpn">VPN</string>
+  <!-- bt only connected switch -->
+  <string name="status_bar_btcon">Bluetooth solo quando collegato</string>
+  <!-- 4G LTE switch -->
+  <string name="show_fourg_title">Visualizza 4G invece di LTE</string>
+  <string name="show_fourg_summary">Sostituisci l\'indicatore statusbar LTE con 4G</string>
+  <string name="statusbar_tuner_category_title">Nascondi gli elementi dalla statusbar</string>
+  <!-- Heads up toast -->
+  <string name="heads_up_enabled">Le notifiche Heads Up sono attive</string>
+  <string name="heads_up_disabled">Le notifiche Heads Up sono disabilitate</string>
 </resources>

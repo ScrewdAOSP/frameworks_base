@@ -42,6 +42,7 @@
   <!-- label for item that screenshots in phone options dialog -->
   <string name="global_action_screenshot">Capture d\'écran</string>
   <string name="global_action_screenrecord">Enregistrement d\'écran</string>
+  <string name="global_action_torch">Lampe de poche</string>
   <string name="global_action_current_user">Actuel</string>
   <!-- Slimseekbar -->
   <string name="default_string">Par défaut</string>
@@ -106,4 +107,6 @@
   <string name="theme_reset_notification_title">Réinitialisation du thème</string>
   <string name="theme_reset_notification_body">Thème système restauré suite à plusieurs plantages.</string>
   <!-- Zen mode buttons -->
+  <string name="silent_mode_priority">Priorité</string>
+  <string name="silent_mode_none">Aucun</string>
 </resources>

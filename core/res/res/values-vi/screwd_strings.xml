@@ -106,4 +106,6 @@
   <string name="theme_reset_notification_title">Đặt lại chủ đề</string>
   <string name="theme_reset_notification_body">Hệ thống chủ đề phục hồi do nhiều ứng dụng đổ vỡ.</string>
   <!-- Zen mode buttons -->
+  <string name="silent_mode_priority">Ưu tiên</string>
+  <string name="silent_mode_none">Không chọn</string>
 </resources>

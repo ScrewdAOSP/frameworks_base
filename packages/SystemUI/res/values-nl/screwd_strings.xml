@@ -79,9 +79,6 @@
   <string name="quick_settings_location_gps_only_label">Alleen apparaat</string>
   <!-- QuickSettings: Location (On, high-accuracy) [CHAR LIMIT=NONE] -->
   <string name="quick_settings_location_high_accuracy_label">Grote nauwkeurigheid</string>
-  <string name="quick_settings_navbar_label">NavBar</string>
-  <string name="quick_settings_navbar_on">NavBar aan</string>
-  <string name="quick_settings_navbar_off">NavBar uit</string>
   <string name="gestures_message">Teken hier uw gesture</string>
   <!-- Text to use when the number in a notification info is too large
          (greater than status_bar_notification_info_maxnum, defined in
@@ -242,8 +239,7 @@
   <!-- SystemUI Tuner Parts -->
   <string name="systemui_tuner_statusbar_title">Statusbalk Items</string>
   <string name="systemui_tuner_qs_title">Quick Settings</string>
-  <!-- Screenshot -->
-  <string name="shortcut_screenshot">Schermafbeelding</string>
+  <string name="status_bar_silent">Stille modus</string>
   <!-- Task Manager -->
   <string name="task_manager_title">Taakbeheer</string>
   <string name="message_switch_fail">Kan niet naar deze taak overschakelen, want deze heeft geen interface.</string>
@@ -254,4 +250,27 @@
   <!-- Notification which notifies user flashlight is enabled -->
   <string name="quick_settings_tile_flashlight_not_title">Zaklamp is aan</string>
   <string name="quick_settings_tile_flashlight_not_summary">Tik om uit te schakelen</string>
+  <!-- Navigation bar Tile -->
+  <string name="quick_settings_navigation_bar">Navigatiebalk</string>
+  <string name="quick_settings_smartbar">SmartBar</string>
+  <string name="quick_settings_smartbar_off">SmartBar uit</string>
+  <string name="quick_settings_fling">Fling gebaar</string>
+  <string name="quick_settings_fling_off">Fling gebaar uit</string>
+  <!-- Screw'd Settings Tile -->
+  <string name="quick_settings_screwdsettings">Screw\'d Instellingen</string>
+  <!-- Statusbar Vibrate silent switch -->
+  <string name="status_bar_vibsil">Trillen &amp; stil</string>
+  <!-- headset icon switch -->
+  <string name="status_bar_headset">Bedrade hoofdtelefoon</string>
+  <!-- vpn icon switch -->
+  <string name="status_bar_vpn">VPN</string>
+  <!-- bt only connected switch -->
+  <string name="status_bar_btcon">Bluetooth alleen indien verbonden</string>
+  <!-- 4G LTE switch -->
+  <string name="show_fourg_title">Toon 4G in plaats van LTE</string>
+  <string name="show_fourg_summary">Vervangt LTE statusbar indicator door 4G</string>
+  <string name="statusbar_tuner_category_title">Verberg items van statusbalk</string>
+  <!-- Heads up toast -->
+  <string name="heads_up_enabled">Heads-up meldingen zijn ingeschakeld</string>
+  <string name="heads_up_disabled">Heads-up meldingen zijn uitgeschakeld</string>
 </resources>

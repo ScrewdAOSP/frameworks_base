@@ -79,9 +79,6 @@
   <string name="quick_settings_location_gps_only_label">Appareil uniquement</string>
   <!-- QuickSettings: Location (On, high-accuracy) [CHAR LIMIT=NONE] -->
   <string name="quick_settings_location_high_accuracy_label">Haute précision</string>
-  <string name="quick_settings_navbar_label">Barre de navigation</string>
-  <string name="quick_settings_navbar_on">Bande de navigation activée</string>
-  <string name="quick_settings_navbar_off">Bande de navigation désactivée</string>
   <string name="gestures_message">Dessinez votre geste ici</string>
   <!-- Text to use when the number in a notification info is too large
          (greater than status_bar_notification_info_maxnum, defined in
@@ -185,6 +182,7 @@
   <string name="quick_settings_themes_app_theme">Thème de l\'application</string>
   <string name="quick_settings_themes_system_theme">Thème du système</string>
   <string name="quick_settings_themes_default_theme">Par défaut</string>
+  <string name="quick_settings_themes_match_system">Correspond au thème système</string>
   <!-- USB tether QS tile -->
   <string name="accessibility_quick_settings_usb_tether_off">Partage USB désactivé</string>
   <string name="accessibility_quick_settings_usb_tether_on">Partage USB activé</string>
@@ -241,8 +239,7 @@
   <!-- SystemUI Tuner Parts -->
   <string name="systemui_tuner_statusbar_title">Éléments de la barre d\'état</string>
   <string name="systemui_tuner_qs_title">Paramètres rapides</string>
-  <!-- Screenshot -->
-  <string name="shortcut_screenshot">Capture d\'écran</string>
+  <string name="status_bar_silent">Mode silencieux</string>
   <!-- Task Manager -->
   <string name="task_manager_title">Gestionnaire de tâches</string>
   <string name="message_switch_fail">Impossible de basculer vers cette tâche, car elle n\'a pas d\'interface.</string>
@@ -253,4 +250,27 @@
   <!-- Notification which notifies user flashlight is enabled -->
   <string name="quick_settings_tile_flashlight_not_title">Lampe de poche allumée</string>
   <string name="quick_settings_tile_flashlight_not_summary">Appuyez pour éteindre</string>
+  <!-- Navigation bar Tile -->
+  <string name="quick_settings_navigation_bar">Barre de navigation</string>
+  <string name="quick_settings_smartbar">SmartBar</string>
+  <string name="quick_settings_smartbar_off">SmartBar désactivée</string>
+  <string name="quick_settings_fling">Fling</string>
+  <string name="quick_settings_fling_off">Fling désactivé</string>
+  <!-- Screw'd Settings Tile -->
+  <string name="quick_settings_screwdsettings">Paramètres Screw\'d</string>
+  <!-- Statusbar Vibrate silent switch -->
+  <string name="status_bar_vibsil">Vibrer et silencieux</string>
+  <!-- headset icon switch -->
+  <string name="status_bar_headset">Casque filaire</string>
+  <!-- vpn icon switch -->
+  <string name="status_bar_vpn">VPN</string>
+  <!-- bt only connected switch -->
+  <string name="status_bar_btcon">Bluetooth uniquement si connecté</string>
+  <!-- 4G LTE switch -->
+  <string name="show_fourg_title">Afficher 4G plutôt que LTE</string>
+  <string name="show_fourg_summary">Utiliser l\'icône 4G dans la barre d\'état plutôt que LTE</string>
+  <string name="statusbar_tuner_category_title">Éléments de la barre d\'état affichés</string>
+  <!-- Heads up toast -->
+  <string name="heads_up_enabled">Notifications flottantes activées</string>
+  <string name="heads_up_disabled">Notifications flottantes désactivées</string>
 </resources>
