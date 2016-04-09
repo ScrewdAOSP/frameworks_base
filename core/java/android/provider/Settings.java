@@ -3683,9 +3683,9 @@ public final class Settings {
          * @hide
          */
         public static final String DOUBLE_TAP_SLEEP_NAVBAR = "double_tap_sleep_navbar";
-		
-		/**
-		 * Enable double tap gesture anywhere on the lock screen put device to sleep
+	
+	/**
+	 * Enable double tap gesture anywhere on the lock screen put device to sleep
          * @hide
          */
         public static final String DOUBLE_TAP_SLEEP_LOCK_SCREEN = "double_tap_sleep_lock_screen";
@@ -3717,8 +3717,8 @@ public final class Settings {
          */
         public static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 		
-		/**
-		 * Navigation bar height when it is on protrait
+	/**
+	 * Navigation bar height when it is on protrait
          * @hide
          */
 
@@ -3776,7 +3776,7 @@ public final class Settings {
          */
         public static final String RECENTS_SEARCH_BAR = "recents_search_bar";
 		
-		/**
+	/**
          * Whether to dismiss all recents tasks
          * @hide
          */
@@ -3788,7 +3788,7 @@ public final class Settings {
          */
         public static final String SYSTEMUI_RECENTS_MEM_DISPLAY = "systemui_recents_mem_display";
 		
-		/**
+	/**
          * Whether to enable status and navigation bar color in battery saver mode.
          *
          * @hide
@@ -3800,7 +3800,7 @@ public final class Settings {
          */
         public static final String STATUS_BAR_SHOW_WEATHER = "status_bar_show_weather";
 		
-		/**
+	/**
          * Whether to show the weather info on the lock screen
          * @hide
          */
@@ -3884,7 +3884,7 @@ public final class Settings {
          */
         public static final String STATUS_BAR_WEATHER_TEMP_STYLE = "status_bar_weather_temp_style";
 
-		/**
+	/**
         * Network traffic indicator, goes from least to greatest significant bitwise
         * 0 = Display up-stream traffic if set
         * 1 = Display down-stream traffic if set
@@ -3941,8 +3941,8 @@ public final class Settings {
         @ChaosLab(name="GestureAnywhere", classification=Classification.NEW_FIELD)
         public static final String GESTURE_ANYWHERE_TRIGGER_WIDTH = "gesture_anywhere_trigger_width";
 		
-		/**
-		 * whether to enable or disable vibration on succesful fingerprint auth
+	/**
+	 * whether to enable or disable vibration on succesful fingerprint auth
          * @hide
          */
         public static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
@@ -3998,7 +3998,7 @@ public final class Settings {
         /** @hide */ public static final int HEADS_UP_USER_ON = 1;
 
         /**
-		 *
+	 *
          * @hide
          */
         public static final String STATUSBAR_BATTERY_BAR_THICKNESS = "statusbar_battery_bar_thickness";
@@ -4027,7 +4027,7 @@ public final class Settings {
          */
         public static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
 		
-		/**
+	/**
          * Defines the shortcuts to be shown on lockscreen
          * Usage is like this: target:icon|target:icon|target:icon
          * if :icon is not set, default application icon will be used
@@ -4174,7 +4174,7 @@ public final class Settings {
          */
         public static final String TOAST_ICON = "toast_icon";
 		
-		/**
+	/**
          * Wether to show a headsup enable/disable button in status bar header
          *
          * @hide
@@ -4203,8 +4203,8 @@ public final class Settings {
          */
         public static final String COLOR_PICKER_PALETTE = "color_picker_palette";
 		
-		/**
-		 * Alternative recent apps integration using OmniSwitch
+	/**
+	 * Alternative recent apps integration using OmniSwitch
          * @hide
          */
         public static final String RECENTS_USE_OMNISWITCH = "recents_use_omniswitch";
@@ -4467,7 +4467,7 @@ public final class Settings {
          */
         public static final String PA_PIE_CHEVRON = "pa_pie_chevron";
 		
-		/**
+	/**
          * If On-The-Go should be displayed at the power menu.
          *
          * @hide
@@ -4508,8 +4508,8 @@ public final class Settings {
          */
         public static final String PA_PIE_ALWAYS_RIGHT = "pa_pie_always_right";
 		
-		/**
-		 * Whether to display app circle sidebar
+	/**
+	 * Whether to display app circle sidebar
          * @hide
          */
         public static final String ENABLE_APP_CIRCLE_BAR = "enable_app_circle_bar";
@@ -4521,8 +4521,8 @@ public final class Settings {
          */
         public static final String WHITELIST_APP_CIRCLE_BAR = "whitelist_app_circle_bar";
 		
-		/**
-		 * Width of the app circle bar trigger
+	/**
+	 * Width of the app circle bar trigger
          *
          * @hide
          */
@@ -4656,8 +4656,8 @@ public final class Settings {
          */
         public static final String RECENT_APP_SIDEBAR_SCALE_FACTOR = "recent_app_sidebar_scale_factor";
 		
-		/**
-		 * Whether or not volume button music controls should be enabled to seek media tracks
+	/**
+	 * Whether or not volume button music controls should be enabled to seek media tracks
          * @hide
          */
         public static final String VOLBTN_MUSIC_CONTROLS = "volbtn_music_controls";
@@ -4671,14 +4671,14 @@ public final class Settings {
 		
 
 		
-		/**
-		 * whether to enable torch on lockscreen
+	/**
+	 * whether to enable torch on lockscreen
          * @hide
          */
         public static final String KEYGUARD_TOGGLE_TORCH = "keyguard_toggle_torch";
 		
-		/**
-		 * Immersive recents options
+	/**
+	 * Immersive recents options
          * 0 = Default AOSP look
          * 1 = Statusbar only
          * 2 = Navbar only
@@ -4687,20 +4687,20 @@ public final class Settings {
          */
         public static final String IMMERSIVE_RECENTS = "immersive_recents";
 		
-		/**
+	/**
          * Whether to prevent loud volume levels when headset is first plugged in.
          * @hide
          */
         public static final String SAFE_HEADSET_VOLUME = "safe_headset_volume";
 		
-		/**
+	/**
          * Whether to mute annoying notifications
          * @hide
          */
         public static final String MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD = "mute_annoying_notifications_threshold";
 		
-		/**
-		 * Enable/Disable screenshot sound
+	/**
+	 * Enable/Disable screenshot sound
          * @hide
          */
         public static final String SCREENSHOT_SOUND = "screenshot_sound";
@@ -4725,32 +4725,32 @@ public final class Settings {
         public static final String PROXIMITY_AUTO_SPEAKER_INCALL_ONLY =
                 "proximity_auto_speaker_incall_only";
 		
-		/**
+	/**
          * Change the number of columns displayed in the Settings dashboard
          * @hide
          */
         public static final String DASHBOARD_COLUMNS = "dashboard_columns";
 		
-		/**
+	/**
          * Whether to display dashboard dividers
          * @hide
          */
         public static final String DASHBOARD_TILEVIEW_DIVIDERS = "dashboard_tileview_dividers";
 		
-		/**
+	/**
          * Whether to display dashboard tiles in a double line layout
          * @hide
          */
         public static final String DASHBOARD_TILEVIEW_DOUBLE_LINES = "dashboard_tileview_double_lines";
 		
-		/**
+	/**
          * Whether to show switches for wifi/cell/bt in the settings dashboard
          * @hide
          */
         public static final String DASHBOARD_SWITCHES = "dashboard_switches";
 		
-		/**
-		 * Transparent qs shade
+	/**
+	 * Transparent qs shade
          * @hide
          */
         public static final String QS_TRANSPARENT_SHADE = "qs_transparent_shade";
@@ -4773,7 +4773,7 @@ public final class Settings {
          */
         public static final String TRANSPARENT_POWER_MENU = "transparent_power_menu";
 		
-		/**
+	/**
          * Enable built in CAF task manager
          * @hide
          */
@@ -4797,65 +4797,65 @@ public final class Settings {
          */
         public static final String INCREASING_RING_RAMP_UP_TIME = "increasing_ring_ramp_up_time";
 		
-		/**
+	/**
          * Which applications to disable heads up notifications in
          *
          * @hide
          */
         public static final String HEADS_UP_CUSTOM_VALUES = "heads_up_custom_values";
 		
-		/**
+	/**
          * Which applications to disable heads up notifications for
          *
          * @hide
          */
         public static final String HEADS_UP_BLACKLIST_VALUES = "heads_up_blacklist_values";
 		
-		/**
+	/**
          * Which applications to post all notification to heads up
          *
          * @hide
          */
         public static final String HEADS_UP_WHITELIST_VALUES = "heads_up_whitelist_values";
 		
-		/**
+	/**
          * Hide lockscreen date
          * @hide
          */
         public static final String HIDE_LOCKSCREEN_DATE  = "hide_lockscreen_date";
 		
-		/**
+	/**
          * Hide lockscreen clock
          * @hide
          */
         public static final String HIDE_LOCKSCREEN_CLOCK = "hide_lockscreen_clock";
 		
-		/**
-		 * Quick Settings Smart Pulldown
+	/**
+	 * Quick Settings Smart Pulldown
          * @hide
          */
         public static final String QS_SMART_PULLDOWN = "qs_smart_pulldown";
 		
-		/**
+	/**
          * Statusbar SCREW'D logo
          * @hide
          */
         public static final String STATUS_BAR_SCREWD_LOGO = "status_bar_screwd_logo";
 		
-		/**
+	/**
          * Statusbar SCREWD logo color setting
          * @hide
          */
         public static final String STATUS_BAR_SCREWD_LOGO_COLOR = "status_bar_screwd_logo_color";
 		
-		/**
-		 *  Enable flashlight notification
+	/**
+	 *  Enable flashlight notification
          * @hide
          */
         public static final String FLASHLIGHT_NOTIFICATION = "flashlight_notification";
 		
-		/**
-		 * change lockscreen alpha color
+	/**
+	 * change lockscreen alpha color
          * @hide
          */
         public static final String LOCKSCREEN_ALPHA = "lockscreen_alpha";
@@ -4866,19 +4866,26 @@ public final class Settings {
          */
         public static final String LOCKSCREEN_SECURITY_ALPHA = "lockscreen_security_alpha";
 		
-		/**
-		 * Force heads up in all applications
+	/**
+	 * Force heads up in all applications
          * @hide
          */
         public static final String HEADS_UP_FORCE_ALL = "heads_up_force_all";
 		
-		/**
-		 * Heads up timeout configuration
+	/**
+         * Defines the global heads up notification snooze
+         * @hide
+         */
+        public static final String HEADS_UP_NOTIFICATION_SNOOZE = "heads_up_notification_snooze";
+		
+		
+	/**
+	 * Heads up timeout configuration
          * @hide
          */
         public static final String HEADS_UP_TIMEOUT = "heads_up_timeout";
 
-		/**
+	/**
          *  List of apps hidden from recents
          * @hide
          */
