@@ -4949,6 +4949,12 @@ public final class Settings {
          * @hide
          */
         public static final String QS_FLOAT_MODE = "qs_float_mode";
+		
+	/**
+         * Custom Pulse Widths
+         * @hide
+         */
+        public static final String PULSE_CUSTOM_DIMEN = "pulse_custom_dimen";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
