@@ -4967,6 +4967,12 @@ public final class Settings {
          * @hide
          */
         public static final String PULSE_FILLED_BLOCK_SIZE = "pulse_filled_block_size";
+		
+	/**
+         * Pulse Fudge Factor
+         * @hide
+         */
+        public static final String PULSE_CUSTOM_FUDGE_FACTOR = "pulse_custom_fudge_factor";
 
          /**
          * Size of Empty Spaces Between Horizontal Visualizer Bars
