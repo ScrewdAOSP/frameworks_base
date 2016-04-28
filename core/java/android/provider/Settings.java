@@ -4955,6 +4955,12 @@ public final class Settings {
          * @hide
          */
         public static final String PULSE_CUSTOM_DIMEN = "pulse_custom_dimen";
+		
+	/**
+         * Custom Spacing Between Pulse Bars
+         * @hide
+         */
+        public static final String PULSE_CUSTOM_DIV = "pulse_custom_div";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
