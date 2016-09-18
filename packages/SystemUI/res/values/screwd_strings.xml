@@ -56,6 +56,8 @@
 
     <!-- SystemUI Tuner Parts -->
     <string name="systemui_tuner_statusbar_title">Statusbar items</string>
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar tuner</string>
 
     <!-- Quick Settings tiles -->
     <string name="quick_settings_screenshot_label">Screenshot</string>
