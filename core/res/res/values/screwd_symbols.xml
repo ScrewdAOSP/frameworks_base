@@ -108,9 +108,6 @@
   <java-symbol type="style" name="Animation.Toast.SlideRightLeft" />
   <java-symbol type="style" name="Animation.Toast.SlideLeftRight" />
 
-  <!-- Notification icon/text dynamic tint -->
-  <java-symbol type="bool" name="config_allowNotificationIconTextTinting" />
-
   <!-- SeekBarPreference -->
   <java-symbol type="layout" name="seek_bar_preference" />
   <java-symbol type="id" name="seekBarPrefBarContainer" />
