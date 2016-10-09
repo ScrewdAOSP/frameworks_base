@@ -271,6 +271,14 @@
             </intent-filter>
         </activity-alias>
 
+        <activity android:name=".tuner.NightModeActivity"
+                  android:theme="@style/TunerSettings"
+                  android:label="@string/systemui_tuner_nightmode_title"
+                  android:parentActivityName="com.mrapocalypse.screwdshop.ScrewdShop"
+                  android:process=":tuner"
+                  android:exported="true">
+        </activity>
+
         <activity android:name=".tuner.NavbarActivity"
                   android:theme="@style/TunerSettings"
                   android:label="@string/navbar_tuner_title"

@@ -60,6 +60,8 @@
     <!-- notification controls -->
     <string name="tuner_notification_control">Power notification controls</string>
 
+    <string name="systemui_tuner_nightmode_title">Night mode</string>
+
     <!-- Quick Settings tiles -->
     <string name="quick_settings_screenshot_label">Screenshot</string>
     <string name="quick_settings_adb_network">ADB network</string>
