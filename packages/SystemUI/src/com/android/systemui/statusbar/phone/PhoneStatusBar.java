@@ -389,6 +389,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
     private ImageView mScrewdLogoLeft;
     private int mScrewdLogoStyle;
     AnimationDrawable screwdAnimationLeft, screwdAnimationRight;
+    private boolean mScrewdLogoAnimated;
 
     private int mNavigationBarWindowState = WINDOW_STATE_SHOWING;
 
@@ -553,6 +554,9 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.STATUS_BAR_SCREWD_LOGO_STYLE),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.STATUS_BAR_SCREWD_LOGO_ANIMATED),
+                    false, this, UserHandle.USER_ALL);
             update();
         }
 
@@ -609,6 +613,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                     UserHandle.USER_CURRENT);
             mScrewdLogo = Settings.System.getIntForUser(resolver,
                     Settings.System.STATUS_BAR_SCREWD_LOGO, 0, mCurrentUserId) == 1;
+            mScrewdLogoAnimated = Settings.System.getIntForUser(resolver,
+                    Settings.System.STATUS_BAR_SCREWD_LOGO_ANIMATED, 0, mCurrentUserId) == 1;
             mScrewdLogoColor = Settings.System.getIntForUser(resolver,
                     Settings.System.STATUS_BAR_SCREWD_LOGO_COLOR, 0xFFFFFFFF, mCurrentUserId);
             mScrewdLogoLeft = (ImageView) mStatusBarView.findViewById(R.id.left_screwd_logo);
@@ -3595,13 +3601,23 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         if (style == 0) {
             mScrewdLogoRight.setVisibility(View.GONE);
             mScrewdLogoLeft.setVisibility(View.VISIBLE);
-            screwdAnimationLeft.start();
-            screwdAnimationRight.stop();
+            if (mScrewdLogoAnimated) {
+                screwdAnimationLeft.start();
+                screwdAnimationRight.stop();
+            } else {
+                screwdAnimationLeft.stop();
+                screwdAnimationLeft.selectDrawable(0); //reset to the beginning of the animation
+            }
         } else {
             mScrewdLogoLeft.setVisibility(View.GONE);
             mScrewdLogoRight.setVisibility(View.VISIBLE);
-            screwdAnimationLeft.stop();
-            screwdAnimationRight.start();
+            if (mScrewdLogoAnimated) {
+                screwdAnimationLeft.stop();
+                screwdAnimationRight.start();
+            } else {
+                screwdAnimationRight.stop();
+                screwdAnimationRight.selectDrawable(0); //reset to the beginning of the animation
+            }
         }
     }
 
