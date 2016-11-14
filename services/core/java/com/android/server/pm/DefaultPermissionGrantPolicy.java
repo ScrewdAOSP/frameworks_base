@@ -658,6 +658,14 @@ final class DefaultPermissionGrantPolicy {
                 grantRuntimePermissionsLPw(gallerypackage, STORAGE_PERMISSIONS, userId);
             }
 
+            // cLock
+            PackageParser.Package cLockPackage = getDefaultProviderAuthorityPackageLPr(
+                    "com.cyanogenmod.lockclock", userId);
+            if (cLockPackage != null) {
+                grantRuntimePermissionsLPw(cLockPackage, CALENDAR_PERMISSIONS, userId);
+		        grantRuntimePermissionsLPw(cLockPackage, LOCATION_PERMISSIONS, userId);
+            }
+
             // Google Account
             PackageParser.Package googleaccountPackage = getDefaultProviderAuthorityPackageLPr(
                     "com.google.android.gsf.login", userId);
